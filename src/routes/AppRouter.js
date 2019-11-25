@@ -1,8 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import NotFoundPage from '../components/NotFoundPage';
-import Header from '../components/Header';
-import HomePage from '../components/HomePage';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Header from '../components/Header'
+import LoginPage from '../components/LoginPage'
+import ExhibitionsPage from '../components/ExhibitionsPage'
+import VisitPlannerPlanner from '../components/VisitPlannerpage'
+// import NotFoundPage from '../components/NotFoundPage'
+// <Route component={NotFoundPage} />
 
 
 const AppRouter = () => (
@@ -10,14 +13,12 @@ const AppRouter = () => (
         <div>
             <Header />
             <Switch>
-                <Route path="/" component={HomePage} exact={true} />
-                <Route path="/portfolio" component={PortfolioPage} exact={true} />
-                <Route path="/portfolio/:id" component={PortfolioItemPage} />
-                <Route path="/contact" component={ContactPage} />
-                <Route component={NotFoundPage} />
+                <Route path="/" component={ExhibitionsPage} exact={true} />
+                <Route path="/login" component={LoginPage} />
+                <Route path="/visitplanner" component={VisitPlannerPlanner} />
             </Switch>
         </div>
     </BrowserRouter>
-);
+)
 
 export default AppRouter;

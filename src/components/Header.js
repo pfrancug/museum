@@ -1,76 +1,63 @@
 import React from 'react'
-
 import menuData from './menu-data'
-import HomePage from './HomePage'
-import ExhibitionsPage from './ExhibitionsPage'
-
-import 'normalize.css';
-import '@fortawesome/fontawesome-free/js/all'
-import '../styles/styles.css'
-
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
-
     constructor(props) {
         super(props)
         this.state = {
-            isSidebarOpen: false
+            isSidebarOpen: false,
+            page: ''
         }
         this.handleMenuButtonClick = this.handleMenuButtonClick.bind(this)
     }
 
     handleMenuButtonClick() {
-        this.setState(prevState => ({
-            isSidebarOpen: !prevState.isSidebarOpen
-        }))
+        this.setState(prevState => ({ isSidebarOpen: !prevState.isSidebarOpen }))
+    }
+
+    componentDidUpdate() {
 
     }
 
     render() {
         const { isSidebarOpen } = this.state
         return (
-            <BrowserRouter>
-                <div className="container">
+            <div>
 
+                <div className="header">
+                    <p className="header__logo">
+                        <i className="fas fa-signature" />
+                    </p>
+                    <p className="header__title">Exhibitions & Events</p>
+                    <p className="header__menu-button" onClick={this.handleMenuButtonClick}>
+                        <i className="fas fa-bars" />
+                    </p>
+                </div>
 
-                    <div className="menu-button" onClick={this.handleMenuButtonClick}>
-                        <p>dupa</p>
-                        <i className="fas fa-bars"></i>
-                    </div>
-
-
+                <div className={`menu ${isSidebarOpen && 'menu__show'}`}>
                     {menuData.length && (
-                        <nav className={`nav ${isSidebarOpen && 'show'}`}>
-                            <ul className="menu-items">
-                                <li className="menu-list" key={'search'}>
+                        <nav>
+                            <ul className="menu__items">
+                                <li className="menu__list" key={'search'}>
                                     <i className="fas fa-search" />
-                                    <input className="search" type="text" placeholder="Search" />
+                                    <input className="menu__search" type="text" placeholder="Search" />
                                 </li>
                                 {menuData.map((item, index) => (
-                                    <li className="menu-list" key={index}>
+                                    <li className="menu__list" key={index}>
                                         <i className={item.icon} />
-                                        <NavLink className="menu-link" to={item.url} onClick={this.handleMenuButtonClick}>
+                                        <NavLink className="menu__link" to={item.url} onClick={this.handleMenuButtonClick}>
                                             {item.label}
                                         </NavLink>
-
                                     </li>
                                 ))}
                             </ul>
                         </nav>
                     )}
-
-
-
-                    <Switch>
-                        <Route path="/" component={HomePage} exact={true} />
-                        <Route path="/exhibtions" component={ExhibitionsPage} exact={true} />
-
-                    </Switch>
-
                 </div>
-            </BrowserRouter>
+
+
+            </div>
 
         )
     }

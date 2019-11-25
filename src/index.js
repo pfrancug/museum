@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import AppRouter from './routes/AppRouter'
+import 'normalize.css'
+import '@fortawesome/fontawesome-free/js/all'
+import './styles/styles.scss'
 
-
-import App from './App'
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<AppRouter />, document.getElementById('app'));

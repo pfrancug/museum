@@ -1,31 +1,31 @@
 const menuData = [
     {
         label: 'Exhibitions & Events',
-        url: '/exhibtions',
+        url: '/',
         icon: 'fas fa-calendar-alt'
     },
     {
         label: 'Artists & Artworks',
-        url: '/',
+        url: '/database',
         icon: 'fab fa-artstation'
     }, {
         label: 'Collections',
-        url: '/',
+        url: '/collections',
         icon: 'fas fa-cube'
     },
     {
         label: 'Plan Your Visit',
-        url: '/',
+        url: '/visitplanner',
         icon: 'fas fa-ticket-alt'
     },
     {
         label: 'Become a Member',
-        url: '/',
+        url: '/membership',
         icon: 'fas fa-id-card'
     },
     {
         label: 'Shop',
-        url: '/',
+        url: '/shop',
         icon: 'fas fa-gift'
     }
 ]
