@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import backgroundImage from './../images/woman.jpg'
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -8,7 +9,7 @@ class LoginPage extends React.Component {
 
     render() {
         return (
-            <div className="login">
+            <div className="login" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repat', backgroundPosition: 'center' }}>
                 <h1 className="login__header">YOUR<br />ART<br />MUSEUM</h1>
                 <p className="login__address">151rd St<br />San Francosco, CA 94103</p>
                 <div className="login__credentials">
