@@ -3,7 +3,7 @@ import { faCalendarAlt, faIcons, faCube, faTicketAlt, faIdCard, faGift } from '@
 const menuData = [
     {
         label: 'Exhibitions & Events',
-        url: '/home',
+        url: '/',
         icon: faCalendarAlt
     },
     {

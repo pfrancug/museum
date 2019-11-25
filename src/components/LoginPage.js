@@ -16,7 +16,7 @@ class LoginPage extends React.Component {
                     <input className="login__password" type="password" placeholder="Password" />
                 </div>
                 <Link className="login__reset-password" to='/account-recovery'>Forgot your password?</Link>
-                <Link className="login__button" to='/events'>Log In</Link>
+                <Link className="login__button" to='/'>Log In</Link>
                 <Link className="login__create-account" to='/create-account'>Don't have an account?</Link>
             </div>
         )
