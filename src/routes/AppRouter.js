@@ -4,18 +4,17 @@ import Header from '../components/Header'
 import LoginPage from '../components/LoginPage'
 import ExhibitionsPage from '../components/ExhibitionsPage'
 import VisitPlannerPlanner from '../components/VisitPlannerpage'
-// import NotFoundPage from '../components/NotFoundPage'
-// <Route component={NotFoundPage} />
-
+import NotFoundPage from '../components/NotFoundPage'
 
 const AppRouter = () => (
     <BrowserRouter>
         <div>
             <Header />
             <Switch>
-                <Route path="/" component={ExhibitionsPage} exact={true} />
-                <Route path="/login" component={LoginPage} />
+                <Route path="/" component={LoginPage} exact={true} />
+                <Route path="/home" component={ExhibitionsPage} />
                 <Route path="/visitplanner" component={VisitPlannerPlanner} />
+                <Route component={NotFoundPage} />
             </Switch>
         </div>
     </BrowserRouter>
