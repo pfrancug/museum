@@ -1,0 +1,31 @@
+.collections {
+  padding: 24px;
+  border: 1px solid red;
+}
+
+.collections__search {
+  border: 5px solid $red;
+  color: $red;
+  display: flex;
+  justify-content: space-between;
+  font-size: $m-size-mobile;
+  margin: 12px 0 0;
+  padding: 16px;
+}
+
+.collections__search-input {
+  color: $red;
+  font-weight: 200;
+  outline: none;
+}
+
+.collections__search-input::placeholder {
+  color: $red;
+}
+
+.collections__advanced-search {
+  color: $red;
+  font-size: $s-size-mobile;
+  margin: 8px;
+  text-decoration: underline;
+}

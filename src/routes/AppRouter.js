@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import LoginPage from '../components/LoginPage'
 import ExhibitionsPage from '../components/ExhibitionsPage'
 import VisitPlannerPlanner from '../components/VisitPlannerpage'
+import Collections from '../components/Collections'
 import NotFoundPage from '../components/NotFoundPage'
 
 const AppRouter = () => (
@@ -13,6 +14,7 @@ const AppRouter = () => (
             <Switch>
                 <Route path="/" component={ExhibitionsPage} exact={true} />
                 <Route path="/login" component={LoginPage} />
+                <Route path="/collections" component={Collections} />
                 <Route path="/visitplanner" component={VisitPlannerPlanner} />
                 <Route component={NotFoundPage} />
             </Switch>
