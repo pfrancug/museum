@@ -1,14 +1,10 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class LoginPage extends React.Component {
     constructor(props) {
         super(props)
     }
-
-    // routeChange() {
-    //     const path 
-    // }
 
     render() {
         return (
@@ -19,9 +15,9 @@ class LoginPage extends React.Component {
                     <input className="login__email" type="email" placeholder="Email address" />
                     <input className="login__password" type="password" placeholder="Password" />
                 </div>
-                <NavLink className="login__reset-password" to='/account-recovery'>Forgot your password?</NavLink>
-                <NavLink className="login__button" to='/'>Log In</NavLink>
-                <NavLink className="login__create-account" to='/create-account'>Don't have an account?</NavLink>
+                <Link className="login__reset-password" to='/account-recovery'>Forgot your password?</Link>
+                <Link className="login__button" to='/events'>Log In</Link>
+                <Link className="login__create-account" to='/create-account'>Don't have an account?</Link>
             </div>
         )
     }
