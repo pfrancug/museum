@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import menuData from './menu-data'
-import { NavLink } from 'react-router-dom';
+import { faSignature, faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
 
 class Header extends React.Component {
     constructor(props) {
@@ -16,10 +18,6 @@ class Header extends React.Component {
         this.setState(prevState => ({ isSidebarOpen: !prevState.isSidebarOpen }))
     }
 
-    componentDidUpdate() {
-
-    }
-
     render() {
         const { isSidebarOpen } = this.state
         return (
@@ -27,11 +25,11 @@ class Header extends React.Component {
 
                 <div className="header">
                     <p className="header__logo">
-                        <i className="fas fa-signature" />
+                        <FontAwesomeIcon icon={faSignature} />
                     </p>
                     <p className="header__title">Exhibitions & Events</p>
                     <p className="header__menu-button" onClick={this.handleMenuButtonClick}>
-                        <i className="fas fa-bars" />
+                        <FontAwesomeIcon icon={faBars} />
                     </p>
                 </div>
 
@@ -40,12 +38,14 @@ class Header extends React.Component {
                         <nav>
                             <ul className="menu__items">
                                 <li className="menu__list" key={'search'}>
-                                    <i className="fas fa-search" />
+                                    <FontAwesomeIcon icon={faSearch} />
                                     <input className="menu__search" type="text" placeholder="Search" />
                                 </li>
                                 {menuData.map((item, index) => (
                                     <li className="menu__list" key={index}>
                                         <i className={item.icon} />
+                                        <FontAwesomeIcon icon={item.icon} />
+
                                         <NavLink className="menu__link" to={item.url} onClick={this.handleMenuButtonClick}>
                                             {item.label}
                                         </NavLink>

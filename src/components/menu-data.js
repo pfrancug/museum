@@ -1,32 +1,34 @@
+import { faCalendarAlt, faIcons, faCube, faTicketAlt, faIdCard, faGift } from '@fortawesome/pro-light-svg-icons'
+
 const menuData = [
     {
         label: 'Exhibitions & Events',
-        url: '/',
-        icon: 'fas fa-calendar-alt'
+        url: '/home',
+        icon: faCalendarAlt
     },
     {
         label: 'Artists & Artworks',
         url: '/database',
-        icon: 'fab fa-artstation'
+        icon: faIcons
     }, {
         label: 'Collections',
         url: '/collections',
-        icon: 'fas fa-cube'
+        icon: faCube
     },
     {
         label: 'Plan Your Visit',
         url: '/visitplanner',
-        icon: 'fas fa-ticket-alt'
+        icon: faTicketAlt
     },
     {
         label: 'Become a Member',
         url: '/membership',
-        icon: 'fas fa-id-card'
+        icon: faIdCard
     },
     {
         label: 'Shop',
         url: '/shop',
-        icon: 'fas fa-gift'
+        icon: faGift
     }
 ]
 
