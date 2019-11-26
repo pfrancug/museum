@@ -1,4 +1,4 @@
-import { faCalendarAlt, faIcons, faCube, faTicketAlt, faIdCard, faGift } from '@fortawesome/pro-light-svg-icons'
+import { faCalendarAlt, faIcons, faCube, faTicketAlt, faIdCard, faGift, faSignInAlt } from '@fortawesome/pro-light-svg-icons'
 
 const menuData = [
     {
@@ -29,6 +29,12 @@ const menuData = [
         label: 'Shop',
         url: '/shop',
         icon: faGift
+    },
+    {
+        label: 'Log In',
+        url: '/login',
+        icon: faSignInAlt
+
     }
 ]
 
