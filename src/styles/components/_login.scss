@@ -1,16 +1,31 @@
 .login {
-  background-color: $grey;
-  min-height: 100vh;
+  background-color: $offblack;
   left: 0;
-  position: absolute;
   margin: 0 auto;
-  padding: 128px;
-  bottom: 0;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
   width: 100vw;
-  z-index: 9999;
 }
 
-.login > * {
+.login__bg-image {
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.login__panel {
+  height: 100%;
+  position: absolute;
+  padding: 128px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.login__panel > * {
   display: block;
 }
 
@@ -33,6 +48,7 @@
 
 .login__email,
 .login__password {
+  border: 1px solid $offblack;
   color: $offblack;
   font-size: $xs-size-mobile;
   font-weight: 500;
