@@ -14,6 +14,7 @@
 
 .collections__search-input {
   border: none;
+  caret-color: $offblack;
   color: $red;
   font-weight: 200;
   outline: none;
@@ -27,11 +28,12 @@
   color: $red;
   font-size: $xs-size-mobile;
   margin: 8px 0 32px;
-  text-decoration: underline;
 }
 
 .collections__elements {
-  display: contents;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
 }
 
 .collections__element {
@@ -50,7 +52,8 @@
 .collections__text {
   color: $red;
   font-size: $xs-size-mobile;
-  font-weight: 500;
+  font-weight: 400;
+  margin: 0 0 32px;
 }
 
 .collections__no-elements {
