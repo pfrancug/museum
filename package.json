@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "theartmuseum",
   "version": "1.0.0",
   "description": "",
   "main": "bundle.js",
@@ -8,8 +8,8 @@
     "build": "webpack --mode production",
     "live-server": "live-server ./public"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Piotr Francug",
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",

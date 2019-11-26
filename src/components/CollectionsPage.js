@@ -14,7 +14,6 @@ class Collections extends React.Component {
 
     handleSetFilter(e) {
         const filter = e.target.value
-        console.log(filter)
         this.setState({ filter })
     }
 
@@ -37,7 +36,8 @@ class Collections extends React.Component {
                 <div className="collections__elements">
                     {filterdCollections.length ? filterdCollections.map((item, index) => (
                         <div className="collections__element" key={index}>
-                            <img className="collections__image" src={item.image} />
+                            <img loading="eager" className="collections__image" src={item.image} />
+
                             <p className="collections__text">{item.title}</p>
                         </div>
                     )) : (
