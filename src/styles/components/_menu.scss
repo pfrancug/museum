@@ -1,6 +1,6 @@
 .menu {
   background-color: $red;
-  box-shadow: 15px 0 15px $grey;
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
   color: $offwhite;
   font-size: $m-size-mobile;
   height: 100vh;
@@ -38,7 +38,7 @@
 
 .menu__search {
   background: $red;
-  border: 3px solid $offwhite;
+  border: 2px solid $offwhite;
   color: $offwhite;
   font-size: 64px;
   font-weight: lighter;
