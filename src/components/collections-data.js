@@ -1,22 +1,29 @@
+import decorativeArts from '../images/collections/decorative-arts.jpg'
+import americanImpressionism from '../images/collections/american-impressionism.jpg'
+import deStijl from '../images/collections/de-stijl.jpg'
+import cubism from '../images/collections/cubism.jpg'
+import american from '../images/collections/american.jpg'
+import greekAntiquities from '../images/collections/greek-antiquities.jpg'
+
 const collectionsData = [
     {
         title: 'DECORATIVE ARTS & CRAFTS',
-        image: ''
+        image: decorativeArts
     }, {
         title: 'AMERICAN IMPRESSIONISM',
-        image: ''
+        image: americanImpressionism
     }, {
         title: 'DE STIJL',
-        image: ''
+        image: deStijl
     }, {
         title: 'CUBISM',
-        image: ''
+        image: cubism
     }, {
         title: 'AMERICAN PHOTOGRAPHY',
-        image: ''
+        image: american
     }, {
         title: 'GREEK ANTIQUITIES',
-        image: ''
+        image: greekAntiquities
     }
 ]
 

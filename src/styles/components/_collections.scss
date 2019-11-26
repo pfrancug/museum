@@ -1,6 +1,5 @@
 .collections {
   padding: 24px;
-  border: 1px solid red;
 }
 
 .collections__search {
@@ -14,6 +13,7 @@
 }
 
 .collections__search-input {
+  border: none;
   color: $red;
   font-weight: 200;
   outline: none;
@@ -25,7 +25,36 @@
 
 .collections__advanced-search {
   color: $red;
-  font-size: $s-size-mobile;
-  margin: 8px;
+  font-size: $xs-size-mobile;
+  margin: 8px 0 32px;
   text-decoration: underline;
+}
+
+.collections__elements {
+  display: contents;
+}
+
+.collections__element {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  width: 50%;
+}
+
+.collections__image {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.collections__text {
+  color: $red;
+  font-size: $xs-size-mobile;
+  font-weight: 500;
+}
+
+.collections__no-elements {
+  color: $offblack;
+  font-size: $l-size-mobile;
+  padding: 256px 0 128px;
 }

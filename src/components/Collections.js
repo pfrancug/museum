@@ -18,19 +18,17 @@ class Collections extends React.Component {
                     </div>
                 </div>
                 <p className="collections__advanced-search">Advanced Search</p>
-
                 <div className="collections__elements">
                     {collectionsData.length ? collectionsData.map((item) => (
-                        <div className="collections__element">
-                            <p>{item.title}</p>
+                        <div className="collections__element" >
+                            <img className="collections__image" src={item.image} />
+                            <p className="collections__text">{item.title}</p>
                         </div>
-                    )) : (<div>collection is empty</div>)}
-
-
+                    )) : (
+                            <h1 className="collections__no-elements">Collection is empty :(</h1>
+                        )
+                    }
                 </div>
-
-
-
             </div>
         )
     }
