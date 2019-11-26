@@ -1,0 +1,129 @@
+.visit {
+  margin: 0;
+  padding: 32px;
+}
+
+.visit__header {
+  font-size: $l-size-mobile;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.visit__text {
+  color: $red;
+  font-size: $s-size-mobile;
+  margin: 16px 0;
+  padding: 0;
+  width: 75%;
+}
+
+.visit__date {
+  margin: 0;
+  padding: 0;
+}
+
+.visit__date-day {
+  border-bottom: 2px solid $grey;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.visit__date-text {
+  color: $grey;
+  display: inline-block;
+  font-weight: 300;
+  line-height: $xs-size-mobile;
+  margin: 0;
+  padding: 32px;
+}
+
+.visit__date-text.active {
+  color: $offblack;
+  text-decoration: underline;
+  border-bottom: 4px solid $red;
+}
+
+.visit__date-info {
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.visit__option {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 32px 32px;
+}
+
+.visit__option-name {
+  font-weight: 300;
+  padding: 32px 0;
+}
+
+.visit__option-name--text {
+  color: $offblack;
+  font-size: $s-size-mobile;
+  margin: 0;
+  padding: 0;
+}
+
+.visit__option-name--details {
+  color: $grey;
+  font-size: $xs-size-mobile;
+  margin: 0;
+  padding: 0;
+}
+
+.visit__howmany {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 32px 0;
+}
+.visit__howmany > * {
+  color: $grey;
+  display: inline-block;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.visit__howmany--icon {
+  color: $grey;
+  font-size: $xs-size-mobile;
+}
+
+.visit__howmany--number.active {
+  color: $offblack;
+  text-decoration: underline;
+}
+
+.visit__total {
+  border-top: 5px solid $red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visit__price {
+  font-weight: 300;
+  margin: 16px 0;
+  padding: 0 32px;
+}
+
+.visit__button {
+  background-color: $red;
+  color: $offwhite;
+  display: block;
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  margin: 64px auto;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 75%;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import menuData from './menu-data'
 import { faSignature, faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
@@ -27,7 +27,7 @@ class Header extends React.Component {
                     <p className="header__logo">
                         <FontAwesomeIcon icon={faSignature} />
                     </p>
-                    <p className="header__title">Exhibitions & Events</p>
+                    <p className="header__title">{this.props.location.pathname.slice(1)}</p>
                     <p className="header__menu-button" onClick={this.handleMenuButtonClick}>
                         <FontAwesomeIcon icon={faBars} />
                     </p>
@@ -41,6 +41,7 @@ class Header extends React.Component {
                                     <FontAwesomeIcon icon={faSearch} />
                                     <input className="menu__search" type="text" placeholder="Search" />
                                 </li>
+
                                 {menuData.map((item, index) => (
                                     <li className="menu__list" key={index}>
                                         <i className={item.icon} />
@@ -63,4 +64,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header
+export default withRouter(Header)

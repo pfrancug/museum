@@ -8,31 +8,31 @@ const menuData = [
     },
     {
         label: 'Artists & Artworks',
-        url: '/database',
+        url: '/Artists & Artworks',
         icon: faIcons
     }, {
         label: 'Collections',
-        url: '/collections',
+        url: '/Collections',
         icon: faCube
     },
     {
         label: 'Plan Your Visit',
-        url: '/visitplanner',
+        url: '/Plan Your Visit',
         icon: faTicketAlt
     },
     {
         label: 'Become a Member',
-        url: '/membership',
+        url: '/Become a Member',
         icon: faIdCard
     },
     {
         label: 'Shop',
-        url: '/shop',
+        url: '/Shop',
         icon: faGift
     },
     {
         label: 'Log In',
-        url: '/login',
+        url: '/Log In',
         icon: faSignInAlt
 
     }

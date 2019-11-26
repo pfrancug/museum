@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from '../components/Header'
 import LoginPage from '../components/LoginPage'
 import ExhibitionsPage from '../components/ExhibitionsPage'
-import VisitPlannerPlanner from '../components/VisitPlannerpage'
-import Collections from '../components/Collections'
+import VisitPlannerPage from '../components/VisitPlannerPage'
+import CollectionsPage from '../components/CollectionsPage'
 import NotFoundPage from '../components/NotFoundPage'
 
 const AppRouter = () => (
@@ -13,9 +13,9 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path="/" component={ExhibitionsPage} exact={true} />
-                <Route path="/login" component={LoginPage} />
-                <Route path="/collections" component={Collections} />
-                <Route path="/visitplanner" component={VisitPlannerPlanner} />
+                <Route path="/Log In" component={LoginPage} />
+                <Route path="/Collections" component={CollectionsPage} />
+                <Route path="/Plan Your Visit" component={VisitPlannerPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
