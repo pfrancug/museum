@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import menuData from './menu-data'
-import { faSignature, faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
+import { faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
 
 class Header extends React.Component {
     constructor(props) {
@@ -22,11 +22,10 @@ class Header extends React.Component {
         const { isSidebarOpen } = this.state
         return (
             <div>
-
                 <div className="header">
-                    <p className="header__logo">
-                        <FontAwesomeIcon icon={faSignature} />
-                    </p>
+                    <div className="header__logo">
+                        <p>The<br />Art<br />Museum</p>
+                    </div>
                     <p className="header__title">{this.props.location.pathname.slice(1)}</p>
                     <p className="header__menu-button" onClick={this.handleMenuButtonClick}>
                         <FontAwesomeIcon icon={faBars} />
@@ -41,7 +40,6 @@ class Header extends React.Component {
                                     <FontAwesomeIcon icon={faSearch} />
                                     <input className="menu__search" type="text" placeholder="Search" />
                                 </li>
-
                                 {menuData.map((item, index) => (
                                     <li className="menu__list" key={index}>
                                         <i className={item.icon} />
@@ -56,10 +54,7 @@ class Header extends React.Component {
                         </nav>
                     )}
                 </div>
-
-
             </div>
-
         )
     }
 }

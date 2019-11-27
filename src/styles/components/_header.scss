@@ -11,7 +11,12 @@
 }
 
 .header__logo {
-  font-size: $l-size-mobile;
+  color: $offblack;
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  line-height: $xs-size-mobile;
+  margin: 0;
+  padding: 8px 32px;
 }
 
 .header__title {
