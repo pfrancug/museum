@@ -1,0 +1,85 @@
+.exhibitions {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+.exhibitions__image {
+  height: 33vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.exhibitions__content {
+  margin: 0;
+  padding: 32px;
+}
+
+.exhibitions__alt {
+  color: $grey;
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.exhibitions__header {
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.exhibitions__date {
+  color: $red;
+  font-size: $m-size-mobile;
+  font-weight: 300;
+  margin: 0;
+  padding: 32px 0;
+}
+
+.exhibitions__details {
+  color: $grey;
+  font-size: $s-size-mobile;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.exhibitions__button {
+  background-color: $red;
+  color: $offwhite;
+  display: block;
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  margin: 64px auto;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 75%;
+}
+
+.exhibitions__status-bar {
+  display: flex;
+  width: 100%;
+}
+
+.exhibitions__status {
+  align-items: baseline;
+  display: flex;
+  width: 50%;
+}
+
+.exhibitions__status-icon,
+.exhibitions__status-text {
+  color: $red;
+  display: inline-block;
+  font-weight: 200;
+}
+
+.exhibitions__status-icon {
+  font-size: $s-size-mobile;
+}
+
+.exhibitions__status-text {
+  font-size: $xs-size-mobile;
+}
