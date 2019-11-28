@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusSquare, faMinusSquare } from '@fortawesome/pro-light-svg-icons'
 import visitData from './visit-data'
@@ -76,7 +77,7 @@ class VisitPlanner extends React.Component {
                         <p className="visit__price">Total</p>
                         <p className="visit__price">${this.state.totalPrice}</p>
                     </div>
-                    <button className="visit__button">Continues to Payment</button>
+                    <Link className="visit__button" to='/Checkout'>Continue to Payment</Link>
                 </div>
             </div>
         )
