@@ -1,0 +1,101 @@
+.shop {
+  justify-content: center;
+  margin: 0;
+  padding: 0 64px;
+  width: 100%;
+}
+
+.shop__image {
+  box-shadow: 0 6px 8px 4px rgba(0, 0, 0, 0.33);
+  margin: 0 0 32px;
+  object-fit: cover;
+  padding: 0;
+  width: 100%;
+}
+
+.shop__navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.shop__navigation__dot {
+  color: $grey;
+  font-size: $xs-size-mobile;
+  margin: 0;
+  padding: 0;
+  width: $s-size-mobile !important;
+}
+
+.shop__navigation__dot.active {
+  color: $red;
+}
+
+.shop__title {
+  font-size: $m-size-mobile;
+  font-weight: 300;
+}
+
+.shop__description {
+  font-size: $xs-size-mobile;
+}
+
+.shop__element {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+}
+
+.shop__price {
+  font-weight: 300;
+  padding: 32px 0;
+}
+
+.shop__price--standard {
+  color: $offblack;
+  font-size: $s-size-mobile;
+  margin: 0;
+  padding: 0;
+}
+.shop__price--exclusive {
+  color: $grey;
+  font-size: $xs-size-mobile;
+  margin: 0;
+  padding: 0;
+}
+
+.shop__howmany {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+}
+
+.shop__howmany > * {
+  color: $grey;
+  display: inline-block;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+.shop__howmany--icon {
+  color: $grey;
+  font-size: $s-size-mobile;
+}
+
+.shop__howmany--count {
+  text-align: center;
+  width: $s-size-mobile;
+}
+
+.shop__button {
+  background-color: $red;
+  color: $offwhite;
+  display: block;
+  font-size: $xs-size-mobile;
+  font-weight: 300;
+  margin: 64px auto;
+  padding: 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 75%;
+}

@@ -6,6 +6,7 @@ import ExhibitionsPage from '../components/ExhibitionsPage'
 import VisitPlannerPage from '../components/VisitPlannerPage'
 import CollectionsPage from '../components/CollectionsPage'
 import NotFoundPage from '../components/NotFoundPage'
+import ShopPage from '../components/ShopPage'
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const AppRouter = () => (
                 <Route path="/Log In" component={LoginPage} />
                 <Route path="/Collections" component={CollectionsPage} />
                 <Route path="/Plan Your Visit" component={VisitPlannerPage} />
+                <Route path="/Shop" component={ShopPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
