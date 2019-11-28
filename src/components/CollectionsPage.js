@@ -1,4 +1,5 @@
 import React from 'react'
+import { DebounceInput } from 'react-debounce-input'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/pro-light-svg-icons'
 import collectionsData from './collections-data'
@@ -22,7 +23,9 @@ class Collections extends React.Component {
         return (
             <div className="collections" >
                 <div className="collections__search">
-                    <input
+                    <DebounceInput
+                        minLength={2}
+                        debounceTimeout={300}
                         className="collections__search-input"
                         type="text"
                         placeholder="Expore the Collection"
