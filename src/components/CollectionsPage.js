@@ -36,8 +36,7 @@ class Collections extends React.Component {
                 <div className="collections__elements">
                     {filterdCollections.length ? filterdCollections.map((item, index) => (
                         <div className="collections__element" key={index}>
-                            <img loading="eager" className="collections__image" src={item.image} />
-
+                            <img className="collections__image" src={item.image} />
                             <p className="collections__text">{item.title}</p>
                         </div>
                     )) : (
