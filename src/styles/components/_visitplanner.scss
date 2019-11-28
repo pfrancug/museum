@@ -98,6 +98,11 @@
   font-size: $xs-size-mobile;
 }
 
+.visit__howmany--number {
+  text-align: center;
+  width: $s-size-mobile;
+}
+
 .visit__howmany--number.active {
   color: $offblack;
   text-decoration: underline;
