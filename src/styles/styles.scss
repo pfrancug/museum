@@ -1,10 +1,12 @@
 @import "./core/settings";
 @import "./core/base";
-@import "./components/header";
-@import "./components/menu";
-@import "./components/login";
-@import "./components/notfound";
 @import "./components/collections";
-@import "./components/visitplanner";
 @import "./components/exhibitions";
+@import "./components/exhibitionpreview";
+@import "./components/exhibitionpreview__carousel";
+@import "./components/header";
+@import "./components/login";
+@import "./components/menu";
+@import "./components/notfound";
 @import "./components/shop";
+@import "./components/visitplanner";

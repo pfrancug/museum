@@ -1,0 +1,20 @@
+.carousel-row img {
+  height: 33vh !important;
+  object-fit: cover !important;
+}
+
+.carousel-dots {
+  margin: 0 !important;
+}
+
+.carousel-dots li {
+  margin: 0 16px !important;
+}
+
+.carousel-dots li button:before {
+  font-size: $l-size-mobile !important;
+}
+
+.carousel-dots-active button::before {
+  color: $red !important;
+}
