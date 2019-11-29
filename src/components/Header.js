@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import menuData from './menu-data'
 import { faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
+import menuData from '../data/menu-data'
 
 class Header extends React.Component {
     constructor(props) {

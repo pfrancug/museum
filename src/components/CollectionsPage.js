@@ -2,7 +2,7 @@ import React from 'react'
 import { DebounceInput } from 'react-debounce-input'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/pro-light-svg-icons'
-import collectionsData from './collections-data'
+import collectionsData from '../data/collections-data'
 
 class Collections extends React.Component {
     constructor(props) {

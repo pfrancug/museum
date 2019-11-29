@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusSquare, faMinusSquare } from '@fortawesome/pro-light-svg-icons'
-import visitData from './visit-data'
+import visitData from '../data/visit-data'
 
 class VisitPlanner extends React.Component {
     constructor(props) {
