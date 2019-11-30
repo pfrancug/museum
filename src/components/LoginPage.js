@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import backgroundImage from './../images/login-background.jpg'
 
 class LoginPage extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
             <div className="login" >
@@ -24,7 +21,6 @@ class LoginPage extends React.Component {
             </div>
         )
     }
-
 }
 
 export default LoginPage;

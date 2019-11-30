@@ -5,10 +5,6 @@ import { faMapMarkerAlt, faClock } from '@fortawesome/pro-duotone-svg-icons'
 import image from '../images/login-background.jpg'
 
 class ExhibitionsPage extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="exhibitions">

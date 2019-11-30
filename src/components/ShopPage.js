@@ -5,10 +5,6 @@ import { faCircle } from '@fortawesome/pro-solid-svg-icons'
 import watch from '../images/shop/watch.jpg'
 
 class ShopPage extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="shop">

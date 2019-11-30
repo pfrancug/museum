@@ -5,10 +5,6 @@ import { faSearch } from '@fortawesome/pro-light-svg-icons'
 import menuData from '../data/menu-data'
 
 export default class Menu extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className={`menu ${this.props.isSidebarOpen && 'menu__show'}`}>
