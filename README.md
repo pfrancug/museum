@@ -1,5 +1,5 @@
 # General info
-Project of mobile website for art museum.
+Project of mobile website for The Art Museum.
 
 # Setup
 Getting a repo and installing packages:
