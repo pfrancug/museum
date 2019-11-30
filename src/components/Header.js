@@ -1,8 +1,8 @@
 import React from 'react'
-import { NavLink, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faSearch } from '@fortawesome/pro-light-svg-icons'
-import menuData from '../data/menu-data'
+import { faBars } from '@fortawesome/pro-light-svg-icons'
+import Menu from './Menu.jsx'
 
 class Header extends React.Component {
     constructor(props) {
@@ -19,7 +19,6 @@ class Header extends React.Component {
     }
 
     render() {
-        const { isSidebarOpen } = this.state
         return (
             <div>
                 <div className="header">
@@ -31,29 +30,10 @@ class Header extends React.Component {
                         <FontAwesomeIcon icon={faBars} />
                     </p>
                 </div>
-
-                <div className={`menu ${isSidebarOpen && 'menu__show'}`}>
-                    {menuData.length && (
-                        <nav>
-                            <ul className="menu__items">
-                                <li className="menu__list" key={'search'}>
-                                    <FontAwesomeIcon icon={faSearch} />
-                                    <input className="menu__search" type="text" placeholder="Search" />
-                                </li>
-                                {menuData.map((item, index) => (
-                                    <li className="menu__list" key={index}>
-                                        <i className={item.icon} />
-                                        <FontAwesomeIcon icon={item.icon} />
-
-                                        <NavLink className="menu__link" to={item.url} onClick={this.handleMenuButtonClick}>
-                                            {item.label}
-                                        </NavLink>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
-                    )}
-                </div>
+                <Menu
+                    isSidebarOpen={this.state.isSidebarOpen}
+                    handleMenuButtonClick={this.handleMenuButtonClick}
+                />
             </div>
         )
     }
